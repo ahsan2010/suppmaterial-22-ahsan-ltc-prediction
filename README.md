@@ -60,9 +60,20 @@ Each script will generate a `.csv` file containing the KU feature vector for the
 - **Language:** Python  
 - **Required Packages:**  
 `sklearn`, `numpy`, `pandas`, `xgboost`, `imblearn`, `lightgbm`, `pickle`, `multiprocessing`
+- **Script**
+  ltc_KU/ku-model-variation/kultc_feature_variation.py
+- **Details:**
+- Automatically maps selected features to corresponding models.
+- Configurable parameters (e.g., boot limit).
+- Uses **AutoSpearman** to remove highly correlated features.
+- Builds models and saves results to the specified directory.
 
-- **Run Script:**
-- hyper-parameter-analysis/hyper-parameter-tuning-analyzer.py
+---
+
+## 4. Hyper-parameter Tuning Analysis
+
+- **Script:**
+  hyper-parameter-analysis/hyper-parameter-tuning-analyzer.py
 - **Purpose:**  
   Builds models using varying parameters and classification algorithms to analyze performance.
 
