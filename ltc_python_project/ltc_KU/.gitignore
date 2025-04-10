@@ -1,0 +1,5 @@
+# discard output files
+
+*.out
+*.pdf
+*.txt
